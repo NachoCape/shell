@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -print | wc -l | grep -r bin /etc/passwd
+find . -type f | wc -l | grep -r bin /etc/passwd
