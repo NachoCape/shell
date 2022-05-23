@@ -1,0 +1,2 @@
+#!/bin/bash
+find ./hello -type l -exec chown -h vincent:staff {} +
