@@ -1,2 +1,2 @@
 #!/bin/bash
-read |echo "Name : $REPLY" | rev
+read | rev "Name : $REPLY" 
