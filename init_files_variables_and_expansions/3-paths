@@ -1,2 +1,2 @@
 #!/bin/bash
-find $_ -type d | wc -l
+find $CD -type d | wc -l
