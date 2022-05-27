@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1 | nl |  ls -1 | nl | egrep -v '^(..)+$'
