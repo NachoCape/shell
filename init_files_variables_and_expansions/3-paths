@@ -1,2 +1,2 @@
 #!/bin/bash
-find $CDPATH -type d | wc -l
+find $_ -type d | wc -l
