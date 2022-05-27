@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $#bestchool(WATER#$water + STIR.#$stir.)
+echo $#bestchool(water#$WATER + stir.#$STIR.)
