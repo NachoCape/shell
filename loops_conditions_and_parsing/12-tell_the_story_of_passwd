@@ -2,7 +2,7 @@
 # This script displays the content of the file /etc/passwd, using the while loop + IFS
 while IFS="" read -r Lread
 do
-	u=$(echo "Lread" | cut -d ":" -f 1)
+	u=$(echo "$Lread" | cut -d ":" -f 1)
 	g=$(echo "$Lread" | cut -d ":" -f 4)
 	h=$(echo "$Lread" | cut -d ":" -f 6)
 	aux1=$(echo "$Lread" | cut -d ":" -f 7)
