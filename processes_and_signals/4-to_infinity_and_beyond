@@ -4,4 +4,8 @@ i=1
 while [ $i -le 3 ] 
 do
 	echo "To infinity and beyond"
+	if (( $i % 2 == 0 ))
+	then
+		echo "sleep 2"
+	fi
 done
