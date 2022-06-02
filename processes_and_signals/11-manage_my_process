@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 #This script "manages manage_my_process"
 start() {
-	./manage_my_process & proc=$(pidof ./manage_my_process)
+	./manage_my_process & proc=$( pgrep -fn manage_my_process )
 	echo "$proc" > /var/run/my_process.pid
 	echo "manage_my_process started"
 }
 
 stop() {
-	proc=$(pidof ./manage_my_process)
-	kill -9 "$proc" && rm /var/run/my_process.pid
+	pid=$(</var/run/my_process.pid)
+	kill -15 "$pid" 
+       	rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
 }
 
