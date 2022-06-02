@@ -7,7 +7,8 @@ start() {
 }
 
 stop() {
-	kill -15 "$( pgrep -fn manage_my_process)" 
+	proc2=$( pgrep -fn manage_my_process )
+	kill -15 "$proc2"
        	rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
 }
