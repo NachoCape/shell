@@ -7,7 +7,7 @@ start() {
 }
 
 stop() {
-	pid=$( </var/run/my_process.pid )
+	pid=$( pidof ./manage_my_process )
 	kill -15 "$pid"
        	rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
